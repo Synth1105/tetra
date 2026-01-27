@@ -1,0 +1,25 @@
+[package]
+name = "tetra"
+version = "1.2.0"
+edition = "2021"
+license = "CC-BY-NC-4.0"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+toml = "0.8"
+ureq = "2.9"
+clap = { version = "4.4", features = ["derive"] }
+base64 = "0.22"
+colored = "2.1"
+anyhow = "1.0"
+flate2 = "1.0"
+dirs = "5.0"
+
+[[bin]]
+name = "tetra"
+path = "src/main.rs"
+
+[[bin]]
+name = "tkexecute"
+path = "src/bin/tkexecute.rs"
