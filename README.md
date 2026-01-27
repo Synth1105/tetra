@@ -24,7 +24,7 @@ curl -sS https://tetra-install.64bit.kr | sh
     Global Settings: Define the program's behavior across the entire system.
     Bash
 
-tokenizer global.init
+tetra global.init
 
     Path: ~/.config/tetra/settings.toml
 
@@ -42,7 +42,7 @@ Bash
     Token Creation: Generates a token file based on local config and global policies.
     Bash
 
-tokenizer token.ize
+tetra token.ize
 
 Token Inspection: Decrypts and decompresses the token content for a quick preview.
 Bash
