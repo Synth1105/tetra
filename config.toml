@@ -1,0 +1,8 @@
+token_type = "WebToken"
+method = "GET"
+target = "https://httpbin.org/get"
+headers_json = '{"Accept": "application/json"}'
+timeout_ms = 5000
+body_data = ""
+payload = ""
+output_file = "test.token"
