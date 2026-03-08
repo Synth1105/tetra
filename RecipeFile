@@ -1,0 +1,38 @@
+[project]
+name = "tetra"
+
+[runtimes]
+items = ["rust@stable"] # e.g. ["node@22.14.0", "rust@stable", "python@3.12", "go@1.22.12", "deno@2.2.5", "bun@1.2.5"]
+
+[package_managers]
+items = ["cargo"] # e.g. ["npm", "pnpm", "pip", "uv", "cargo", "go", "deno", "bun"]
+auto_install = true
+
+[system_packages]
+items = [] # e.g. ["brew:wget", "apt:libssl-dev", "pacman:jq"]
+auto_install = false
+use_sudo = false
+update = false
+missing_only = true
+
+[extensions]
+dirs = [".tortia/extensions", "extensions"] # searched in order
+before_deps = []
+after_deps = []
+before_build = []
+after_build = []
+before_run = []
+after_run = []
+
+[deps]
+command = "" # e.g. npm ci --prefix app
+
+[build]
+command = "cargo build --release" # e.g. npm run build --prefix app
+
+[run]
+command = "./target/release/tokenizer" # e.g. node app/index.js
+
+[bundle]
+include = ["."]
+exclude = [".git", "target"]
